@@ -25,6 +25,7 @@
 body {
     margin: 0;
     overflow-x: hidden;
+    font-family: mainfont;
 }
 .header {
     display: flex;
@@ -59,8 +60,10 @@ body {
 }
 .content    {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* change "height: 100vh;" to "height: fit-content;" */
     height: 100vh;
     background-color: #ffffff;
 }
