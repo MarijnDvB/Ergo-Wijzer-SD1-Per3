@@ -26,6 +26,9 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: mainfont;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
 }
 .header {
     display: flex;
@@ -38,6 +41,15 @@ body {
     display: flex;
     justify-content: center;
     background-color: #f8f8f8;
+}
+.contact-text   {
+    display: flex;
+    justify-content: left;
+    margin-left: 5rem;
+}
+#fat-text  {
+    text-decoration: solid;
+    color: rgb(71, 71, 71);
 }
 .text-container button  {
     font-family: mainfont;
@@ -55,10 +67,26 @@ body {
     transform: scale(1.05);
     cursor: pointer ;
 }
+.contact-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    width: 80vw;
+}
 .text-container {
     margin-top: 5rem;
+    margin-bottom: 1.5rem;
     margin-right: 2.5rem;
     max-width: 40vw;
+}
+.text-container h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #003c95;
 }
 .image-container {
     margin-top: 5rem;
@@ -79,6 +107,21 @@ product-text   {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2rem;
+}
+.contact p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    text-align: start;
+}
+#contact-p  {
+    font-size: 1.5rem;
 }
 .sliding-container  {
     display: flex;
@@ -116,17 +159,19 @@ product-text   {
 .content    {
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: fit;
     background-color: #ffffff;
+    margin-bottom: auto;
 }
 .footer {
     display: flex;
     align-items: flex-end;
     height: 6.5rem;
     width: 100vw;
-    position: relative;
+    position: absolute;
     justify-content: space-between;
     background-color: #f1f1f1;
+    bottom: 0;
 }
 .footer-socials {
     display: flex;
