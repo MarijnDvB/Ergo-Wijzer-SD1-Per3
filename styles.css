@@ -34,6 +34,62 @@ body {
     text-align: center;
     height: 6rem;
 }
+.text  {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+.text-container button  {
+    font-family: mainfont;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #e2322b;
+    color: #ffffff;
+    transition: 200ms;
+}
+.text-container button:hover {
+    background-color: #003c95;
+    transform: scale(1.05);
+    cursor: pointer ;
+}
+.text-container {
+    margin-top: 5rem;
+    margin-right: 2.5rem;
+    max-width: 40vw;
+}
+.image-container {
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    max-width: 40vw;
+}
+#artboard   {
+    width: 80%;
+    margin: 5rem;
+}
+.products   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+}
+product-text   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliding-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    width: 80vw;
+    height: 30rem;
+    align-self: center;
+}
 #main-logo  {
     width: auto;
     height: 6rem;
@@ -55,22 +111,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-right: 2rem; */
     height: 6rem;
 }
 .content    {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* change "height: 100vh;" to "height: fit-content;" */
-    height: 100vh;
+    height: fit-content;
     background-color: #ffffff;
 }
 .footer {
     display: flex;
     align-items: flex-end;
     height: 6.5rem;
+    width: 100vw;
+    position: relative;
     justify-content: space-between;
     background-color: #f1f1f1;
 }
