@@ -33,7 +33,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #f1f1f1;
+    background-color: #ebebeb;
     text-align: center;
     height: 6rem;
 }
@@ -47,6 +47,20 @@ body {
     justify-content: left;
     margin-left: 5rem;
 }
+.about-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    margin-right: 5rem;
+}
+.about-text h1  {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #003c95;
+}
+
 #fat-text  {
     text-decoration: solid;
     color: rgb(71, 71, 71);
@@ -163,6 +177,11 @@ product-text   {
     background-color: #ffffff;
     margin-bottom: auto;
 }
+.about-content  {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
 .footer {
     display: flex;
     align-items: flex-end;
@@ -196,7 +215,7 @@ product-text   {
     transform: scale(1.05);
 }
 #socialicon {
-    width: 1.5rem;
+    width: 1.75rem;
     height: auto;
     margin-right: 1rem;
 }
