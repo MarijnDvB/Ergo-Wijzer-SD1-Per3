@@ -1,11 +1,9 @@
-// I will be creating a different pen with touch support but right // now I have no time for it due to school
-
 const slider = document.querySelector(".items");
 const slides = document.querySelectorAll(".item");
 const button = document.querySelectorAll(".button");
 
 let current = 0;
-let prev = 4;
+let prev = slides.length - 1;
 let next = 1;
 
 for (let i = 0; i < button.length; i++) {
@@ -14,7 +12,7 @@ for (let i = 0; i < button.length; i++) {
 
 const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
-const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+const gotoNext = () => current < slides.length - 1 ? gotoNum(current + 1) : gotoNum(0);
 
 const gotoNum = number => {
     current = number;
@@ -27,12 +25,12 @@ const gotoNum = number => {
         slides[i].classList.remove("next");
     }
 
-    if (next == 5) {
+    if (next == slides.length) {
         next = 0;
     }
 
     if (prev == -1) {
-        prev = 4;
+        prev = slides.length - 1;
     }
 
     slides[current].classList.add("active");

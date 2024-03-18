@@ -9,8 +9,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px; /* Adjust the width */
-  height: 600px; /* Adjust the height */
+  width: 300px; /* Adjust the width */
+  height: 400px; /* Adjust the height */
   border-radius: 10px; /* Adjust border-radius if necessary */
   overflow: hidden;
   transition: all 300ms ease-in-out;
@@ -20,7 +20,7 @@
 
 .item img {
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
 }
 
@@ -33,27 +33,29 @@
 .item.prev {
   z-index: 2;
   opacity: 0.50;
-  transform: translate(-125%, -50%);
+  transform: translate(-170%, -50%);
 }
 
 .item.next {
   z-index: 2;
   opacity: 0.50;
-  transform: translate(25%, -50%);
+  transform: translate(60%, -50%);
 }
 
 .items .button-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 100%;
+  left: 100%;
   transform: translate(-50%, -50%);
-  width: 275px;
+  width: 1100px;
   z-index: 100;
 }
 
 .button-container .button {
-  color: #fff;
-  font-size: 32px;
+
+  color: #ffffff;
+  width: 32px;
+
   cursor: pointer;
   position: relative;
   opacity: 0.75;
@@ -67,8 +69,8 @@
 .button-container .button:before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 100%;
+  left: 100%;
   transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
@@ -90,4 +92,12 @@
 .items .item.prev,
 .items .item.next {
   border-radius: 0;
+}
+
+#ArrowBut{
+
+width: 10px;
+display: flex;
+position: relative;
+
 }
