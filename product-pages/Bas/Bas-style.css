@@ -1,12 +1,8 @@
-.FeatText {
-    font-size: 20px;
-    font-weight: bold;
-}
 
 product-chair   {
     position: absolute;
-    top: 25%;
-    margin-left: 16rem;
+    top: 20rem;
+    left: 21rem;
 }
 
 .products p    {
@@ -15,10 +11,6 @@ product-chair   {
     margin-top: 0;
     margin-bottom: 0;
     color: #000000;
-}
-
-.FeatureList {
-    top: -50%;
 }
 
 .video-container {
@@ -34,6 +26,19 @@ product-chair   {
     height: 100%;
   }
 
-  .features {
-    margin-top: -30rem; /* Adjust as needed to move the features section up */
-}
+  #ChairStyle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #ChairStyle1 {
+    font-size: 12px;
+    
+  }
+
+  .chair-description {
+    position: absolute;
+    top: 50rem;
+    left: 21rem;
+  }
+
