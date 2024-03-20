@@ -42,8 +42,8 @@ product-chair   {
     left: 21rem;
   }
 
-  .Text {
-    font-size: 15px;
+  .text {
+    font-size: 14px;
     font-weight: bold;
   }
 
@@ -83,12 +83,14 @@ product-chair   {
     z-index: 2;
     opacity: 0.50;
     transform: translate(-170%, -50%);
+    filter: blur(2px);
   }
   
   .item.next {
     z-index: 2;
     opacity: 0.50;
     transform: translate(70%, -50%);
+    filter: blur(2px);
   }
   
   .items .button-container {
@@ -149,5 +151,17 @@ product-chair   {
   position: relative;
   
   }
+  .item .text {
+    display: none; /* Initially hide all text */
+  }
   
- 
+  .item.active .text {
+    display: block; /* Show text only when the item is active */
+  }
+  
+  .items .item.active .text {  
+    color: #000000; /* Adjust text color */
+    z-index: 100; /* Ensure it's above other elements */
+  }
+  
+
