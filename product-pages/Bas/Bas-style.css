@@ -6,9 +6,9 @@ product-chair   {
 }
 
 .products p    {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin-top: 0;
+    margin-top: -2rem;
     margin-bottom: 0;
     color: #000000;
 }
@@ -20,19 +20,19 @@ product-chair   {
   }
   .video-container iframe {
     position: absolute;
-    top: 80%;
+    top: 50%;
     left: 0;
     width: 100%;
     height: 100%;
   }
 
   #ChairStyle {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
   }
 
   #ChairStyle1 {
-    font-size: 12px;
+    font-size: 8px;
     
   }
 
@@ -42,3 +42,112 @@ product-chair   {
     left: 21rem;
   }
 
+  .Text {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .items {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    user-select: none;
+  }
+  
+  .items .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Adjust the width */
+    height: 400px; /* Adjust the height */
+    border-radius: 10px; /* Adjust border-radius if necessary */
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+  
+  .item.active {
+    opacity: 1;
+    z-index: 99;
+
+  }
+  
+  .item.prev {
+    z-index: 2;
+    opacity: 0.50;
+    transform: translate(-170%, -50%);
+  }
+  
+  .item.next {
+    z-index: 2;
+    opacity: 0.50;
+    transform: translate(70%, -50%);
+  }
+  
+  .items .button-container {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 1150px;
+    z-index: 100;
+  }
+  
+  .button-container .button {
+  
+    color: #ffffff;
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .button-container .button:hover {
+    opacity: 1;
+  }
+  
+  .button-container .button:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    z-index: -99;
+  }
+  
+  .button-container .button:nth-child(1) {
+    float: left;
+  }
+  
+  .button-container .button:nth-child(2) {
+    float: right;
+  }
+  
+  /* Remove border-radius from .item */
+  .items .item.active,
+  .items .item.prev,
+  .items .item.next {
+    border-radius: 0;
+  }
+  
+  #ArrowBut{
+  
+  width: 10px;
+  display: flex;
+  position: relative;
+  
+  }
+  
+ 
