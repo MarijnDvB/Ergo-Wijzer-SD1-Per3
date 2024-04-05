@@ -1,3 +1,27 @@
+
+product-chair{
+  font-size: 60px;
+  font-weight: bold;
+  position: absolute;
+  top: 10rem;
+  left: 16rem;
+}
+
+product-text {
+  font-size: 16px;
+  position: absolute;
+  top: 20rem;
+  left: 16rem;
+  max-width: 65rem;
+ max-width: 55rem;
+}
+
+.Information {
+  font-size: 16px;
+  position: absolute;
+  
+}
+
 .video-container {
     position: relative;
     width: 100%;
