@@ -1,0 +1,181 @@
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.product-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.Information {
+  font-size: 16px;
+  position: absolute;
+  
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; 
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #ChairStyle {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  #ChairStyle1 {
+    font-size: 8px;
+    
+  }
+
+  .chair-description {
+    position: absolute;
+    top: 50rem;
+    left: 21rem;
+  }
+
+  .text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .items {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    user-select: none;
+  }
+  
+  .items .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 370px; 
+    border-radius: 10px; 
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+  
+  .item.active {
+    opacity: 1;
+    z-index: 99;
+
+  }
+  
+  .item.prev {
+    z-index: 2;
+    opacity: 0.50;
+    transform: translate(-170%, -50%);
+    filter: blur(2px);
+  }
+  
+  .item.next {
+    z-index: 2;
+    opacity: 0.50;
+    transform: translate(70%, -50%);
+    filter: blur(2px);
+  }
+  
+  .items .button-container {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    z-index: 100;
+  }
+  
+  .button-container .button {
+  
+    color: #ffffff;
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .button-container .button:hover {
+    opacity: 1;
+  }
+  
+  .button-container .button:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    z-index: -99;
+  }
+  
+  .button-container .button:nth-child(1) {
+    float: left;
+  }
+  
+  .button-container .button:nth-child(2) {
+    float: right;
+  }
+  
+
+  .items .item.active,
+  .items .item.prev,
+  .items .item.next {
+    border-radius: 0;
+  }
+  
+  .sliding-container1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 90vh;
+}
+
+  #ArrowBut{
+  width: 10px;
+  display: flex;
+  position: relative;
+  
+  }
+  .item .text {
+    display: none;
+  }
+  
+  .item.active .text {
+    display: block; 
+  }
+  
+  .items .item.active .text {  
+    color: #000000; 
+    z-index: 100;
+  }
+  
+
