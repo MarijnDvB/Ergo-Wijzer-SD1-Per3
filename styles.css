@@ -50,6 +50,7 @@ body {
 .about-text {
     display: flex;
     flex-direction: column;
+    width: 50vw;
     margin-left: 5rem;
     margin-top: 3rem;
     margin-right: 5rem;
