@@ -38,10 +38,12 @@ iframe {
 }
 
 .slideshow-container {
+  display: flex;
+  align-items: stretch;
+
   max-width: 600px;
   position: relative;
   margin: auto;
-  margin-left: 37rem;
   height: 482px;
 }
 
@@ -107,6 +109,11 @@ iframe {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+.dots {
+  margin-left: 53rem;
+  margin-top: -9rem;
 }
 
 /* The dots/bullets/indicators */
