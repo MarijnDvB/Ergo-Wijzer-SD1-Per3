@@ -1,150 +1,139 @@
-* {
-  box-sizing: border-box;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-iframe {
-  width: 31rem;
-  margin-left: 3.3rem;
-}
-
-.container {
-  min-height: 130vh;
-}
-
-.title-container {
-  margin-right: 40rem;
-}
-
-.Title {
-  font-weight: 600;
-  font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  align-items: center;
-}
-
-.product-text {
-  width: 60vw;
-}
-
-.Content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.slideshow-container {
-  display: flex;
-  align-items: stretch;
-
-  max-width: 600px;
-  position: relative;
-  margin: auto;
-  height: 482px;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: rgba(0, 0, 0, 0.8);
-  margin-top: -5rem;
-}
-
-#image-slideshow {
-  margin-left: 10rem;
-  max-width: 16rem;
-
-  max-height: 18rem;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-  margin-top: -5rem;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.slide-text {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  background-color: lightgrey;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #202020;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.dots {
-  margin-left: 53rem;
-  margin-top: -9rem;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin-top: 2rem;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
+* { 
+  box-sizing: border-box; 
+} 
+ 
+h1 { 
+  font-size: 3rem; 
+} 
+ 
+iframe { 
+  width: 31rem; 
+  margin-left: 3.3rem; 
+} 
+ 
+.container { 
+  min-height: 130vh; 
+} 
+ 
+.title-container { 
+  margin-right: 40rem; 
+} 
+ 
+.Title { 
+  font-weight: 600; 
+  font-size: 24px; 
+  font-family: Arial, Helvetica, sans-serif; 
+  display: flex; 
+  align-items: center; 
+} 
+ 
+.product-text { 
+  width: 60vw; 
+} 
+ 
+.Content { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+} 
+ 
+.slideshow-container { 
+  display: flex; 
+  align-items: stretch; 
+ 
+  max-width: 600px; 
+  position: relative; 
+  margin: auto; 
+  height: 482px; 
+} 
+ 
+.mySlides { 
+  display: none; 
+} 
+ 
+.prev, 
+.next { 
+  cursor: pointer; 
+  position: absolute; 
+  top: 50%; 
+  width: auto; 
+  margin-top: -22px; 
+  padding: 16px; 
+  color: white; 
+  font-weight: bold; 
+  font-size: 18px; 
+  transition: 0.6s ease; 
+  border-radius: 0 3px 3px 0; 
+  user-select: none; 
+  width: 4rem;
+  margin-top: -5rem; 
+  margin-left: -2rem; 
+} 
+ 
+#image-slideshow { 
+  margin-left: 10rem; 
+  max-width: 16rem; 
+ 
+  max-height: 18rem; 
+} 
+ 
+.next { 
+  right: 0; 
+  border-radius: 3px 0 0 3px; 
+  margin-top: -5rem; 
+  margin-right: -4rem; 
+} 
+ 
+.slide-text { 
+  color: black; 
+  font-size: 15px; 
+  padding: 8px 12px; 
+  position: absolute; 
+  width: 100%; 
+  text-align: center; 
+  background-color: lightgrey; 
+} 
+ 
+.numbertext { 
+  color: #202020; 
+  font-size: 12px; 
+  padding: 8px 12px; 
+  position: absolute; 
+  top: 0; 
+} 
+ 
+.dot { 
+  cursor: pointer; 
+  height: 15px; 
+  width: 15px; 
+  margin: 0 2px; 
+  background-color: #bbb; 
+  border-radius: 50%; 
+  display: inline-block; 
+  transition: background-color 0.6s ease; 
+  margin-top: 2rem; 
+} 
+ 
+.buttons { 
+  width: 4rem; 
+  margin-left: -4rem; 
+} 
+ 
+.active, 
+.dot:hover { 
+  background-color: #717171; 
+} 
+ 
+.fade { 
+  animation-name: fade; 
+  animation-duration: 1.5s; 
+} 
+ 
+@keyframes fade { 
+  from { 
+    opacity: 0.4; 
+  } 
+  to { 
+    opacity: 1; 
+  } 
+} 
